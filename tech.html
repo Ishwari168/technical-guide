@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Guide Website</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .active {
+            background-image:url("aaa.jpg");
+            background-size:cover;
+            width:100vw;
+            height:100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        section {
+            display: none; /* Hide all sections by default */
+            padding: 40px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .active {
+            display: block; /* Show the active section */
+        }
+
+        /* Registration form styles */
+        #registration-form {
+            text-align: center;
+        }
+
+        #registration-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #registration-form .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #registration-form .main {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #registration-form .box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #registration-form #submit {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #registration-form #submit:hover {
+            background-color: #0056b3;
+        }
+        #contact-content ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        #contact-content ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Technical Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="blog-link">Blog</a></li>
+                <li><a href="#" id="resources-link">Resources</a></li>
+                <li><a href="#" id="contact-link">Contact</a></li>
+                <li><a href="#" id="register-link">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        <section id="home-content" class="active"> <!-- Initially active -->
+            <h2>Welcome to Technical Guide</h2>
+            <p>Explore our blog posts, resources, and more to enhance your technical knowledge.</p>
+            <p>We cover a wide range of topics including:</p>
+            <ul>
+                <li>Programming languages (Java, Python, JavaScript, etc.)</li>
+                <li>Web development (HTML, CSS, JavaScript frameworks, etc.)</li>
+                <li>Data science and machine learning</li>
+                <li>Cybersecurity</li>
+                <li>Cloud computing</li>
+                <li>Software engineering best practices</li>
+            </ul>
+            <p>Whether you're a beginner looking to learn the basics or an experienced professional seeking advanced insights, we have something for everyone.</p>
+        </section>
+
+        <section id="blog-content">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>Introduction to Machine Learning</h3>
+                <p>In this blog post, we delve into the basics of machine learning, covering concepts such as supervised learning, unsupervised learning, and neural networks.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Securing Your Web Applications</h3>
+                <p>Learn about best practices for securing web applications against common vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Introduction to Docker</h3>
+                <p>Docker is a popular containerization platform used for packaging applications and their dependencies into isolated containers. This blog post provides an overview of Docker and its benefits.</p>
+                <a href="#">Read More</a>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </section>
+
+        <section id="resources-content">
+            <h2>Resources</h2>
+            <p>Check out these helpful resources to further your technical skills:</p>
+            <ul>
+                <li><a href="#">FreeCodeCamp</a></li>
+                <li><a href="#">Coursera</a></li>
+                <li><a href="#">edX</a></li>
+                <li><a href="#">Codecademy</a></li>
+            </ul>
+        </section>
+
+        <section id="contact-content">
+            <h2>Contact Us</h2>
+            <p>Have a question or feedback? Reach out to us:</p>
+            <ul>
+                <li>Email: info@technicalguide.com</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Main Street, City, Country</li>
+            </ul>
+        </section>
+
+        <section id="registration-form">
+            <div id="registration">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-mod-3"></div>
+                        <div class="col-md-6 main">
+                            <form action="/sign_up" method="POST">
+                                <h2>Registration Form</h2>
+                                <input type="text" class="box" id="name" name="name" placeholder="Name" required/>
+                                <br>
+                                
+                                <input type="text" class="box" id="email" name="email" placeholder="EmailId" required/>
+                                <br>
+                                <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required/>
+                                <br>
+                                
+                                <input type="text" class="box" id="password" name="password" placeholder="Password" required/>
+                                <br>
+                                <input type="submit" value="Submit" id="submit" />+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Technical Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sections = document.querySelectorAll('section');
+            var links = document.querySelectorAll('nav ul li a');
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var targetId = this.getAttribute('href').substring(1);
+                    showContent(targetId);
+                });
+            });
+
+            function showContent(targetId) {
+                sections.forEach(function(section) {
+                    section.classList.remove('active');
+                });
+                document.getElementById(targetId).classList.add('active');
+            }
+
+            document.getElementById('register-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                showContent('registration-form');
+            });
+
+            document.getElementById('blog-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                showContent('blog-content');
+            });
+
+            document.getElementById('resources-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                showContent('resources-content');
+            });
+
+            document.getElementById('contact-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                showContent('contact-content');
+            });
+        });
+    </script>
+</body>
+</html>
